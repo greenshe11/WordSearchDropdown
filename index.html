@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptoms Selection</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container mt-5 words-selector-container">
+        <h3>Dropdown Word Suggestion</h3>
+        
+        <!-- Bootstrap dropdown with input -->
+        <div id="word-tags-container">
+            <span>Words Selected:  </span>
+            <br>
+            <span class="word-tags-tip">(click on tag to remove)</span>
+            <br>
+            <div id="word-tags-list"></div>
+        </div>
+        <div class="dropdown">
+            <input type="text" id="textbox" class="form-control" placeholder="Find and select words..." oninput="suggestWords()" onfocus="suggestWords()" autocomplete="off" aria-haspopup="true" aria-expanded="false" />
+            <ul id="words-suggestion-list" class="dropdown-menu w-100 show">
+            </ul>
+        </div>
+        
+    </div>
+    
+</body>
+<script>
+
+</script>
+
+
+</html>
