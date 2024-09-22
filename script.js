@@ -226,7 +226,7 @@
     }
   }
   
-  const leven = new WordSuggestions(
+  const smw = new WordSuggestions(
     [
             'Fever and chills', 'Persistent cough', 'Shortness of breath', 'Chest pain',
             'Fatigue and weakness', 'Nausea and vomiting', 'Severe headache', 'Muscle aches',
@@ -290,6 +290,6 @@
         
     ]
   )
-  window.suggestWords = leven.evaluateInput.bind(leven)
-  window.addToSelectedWords = leven.addToSelectedWords.bind(leven)
-  window.removeWordTag = leven.removeWordTag.bind(leven)
+  window.suggestWords = smw.evaluateInput.bind(smw)
+  window.addToSelectedWords = smw.addToSelectedWords.bind(smw)
+  window.removeWordTag = smw.removeWordTag.bind(smw)
